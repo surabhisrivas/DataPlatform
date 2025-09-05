@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run API",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "api: run",
+      "program": "${workspaceFolder}/DataPlatform.API/bin/Debug/net8.0/DataPlatform.API.dll",
+      "cwd": "${workspaceFolder}/DataPlatform.API",
+      "env": { "ASPNETCORE_ENVIRONMENT": "Development" }
+    },
+    {
+      "name": "Run Angular",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}/DataPlatform.Client",
+      "preLaunchTask": "client: run"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Run API + Angular",
+      "configurations": [ "Run API", "Run Angular" ]
+    }
+  ],
+  
+}

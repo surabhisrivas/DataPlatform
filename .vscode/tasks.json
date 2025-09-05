@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "api: run",
+      "type": "process",
+      "command": "dotnet",
+    "args": [ "watch", "run", "--project", "DataPlatform.API/DataPlatform.API.csproj" ]
+    },
+    {
+      "label": "client: run",
+      "type": "npm",
+      "script": "start",
+      "path": "DataPlatform.Client"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# VS Code standard .gitignore for .NET and Angular projects
+# Ignore build output
+bin/
+obj/
+# Ignore Angular build output
+/dist
+/node_modules
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+# Ignore VS Code settings
+.vscode/*.code-workspace
+.vscode/*.history
+# Ignore logs
+*.log
+# Ignore environment files
+.env
+# Ignore esproj files
+*.esproj
